@@ -1,0 +1,84 @@
+.projects {
+    margin-bottom: 16rem;
+    scroll-margin-top: 15rem;
+}
+
+.projects .projects__content {
+    max-width: 56rem;
+    text-align: center;
+    margin: 0 auto 6rem;
+}
+
+.projects ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.projects ul li.projects__reversed-list {
+    flex-direction: row-reverse;
+}
+
+.projects ul li:not(:last-of-type) {
+    margin-bottom: 12rem;
+}
+
+.projects ul li .image img {
+    width: 100%;
+    min-width: 40rem;
+    max-width: 47rem;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.projects ul li:hover {
+    transition: 0.4s 0.4s;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ffffff;
+}
+
+.projects ul li:not(:hover) {
+    transition: 0.5s;
+}
+
+.projects ul li .projects__info {
+    max-width: 47rem;
+}
+
+.projects ul li .projects__info p {
+    margin: 1rem 0 4rem;
+}
+
+.projects ul li .projects__info a {
+    font-weight: 500;
+    text-decoration: underline;
+    color: var(--p-p);
+}
+
+.projects ul li .projects__info a:hover {
+    transition: 0.4s;
+    text-shadow: rgb(51, 153, 146) 0 0 5px;
+}
+
+.technologies{
+    text-shadow: rgb(212, 196, 48) 0 0 2px;
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .projects ul li,
+    .projects ul li.projects__reversed-list {
+        flex-direction: column;
+    }
+
+    .projects ul li .projects__info {
+        max-width: 66rem;
+    }
+
+    .projects ul li .image img {
+        min-width: auto;
+    }
+}

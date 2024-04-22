@@ -1,0 +1,36 @@
+footer{
+    background-color: var(--bg-light);
+}
+
+footer .footer__content{
+    text-align: center;
+    padding:6rem 2rem 1rem;
+    max-width: 47rem;
+}
+
+footer .footer__content .footer__contact span{
+    display: block;
+    font-weight: 500;
+    color: var(--white);
+}
+
+footer .footer__content ul li{
+    display: inline-block;
+}
+
+footer .footer__content ul a .icon{
+    display: inline-block;
+    padding: 1rem;
+    filter: invert();
+}
+
+.github-icon{
+    margin-bottom: 0.65rem;
+    margin-left: 0.8rem;
+    width: 28px;
+    filter: grayscale(45%);
+}
+
+footer .footer__content .footer__copyright{
+    font-size: 1.4rem;
+}
