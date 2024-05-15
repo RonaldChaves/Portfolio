@@ -1,4 +1,4 @@
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,29 +6,36 @@ header{
     scroll-margin-top: 20rem;
 }
 
-header .header__left{
+header .header__left {
     max-width: 62rem;
     flex: 1;
 }
 
-header .header__left h1{
+header .header__left h1 {
     color: var(--white);
 }
 
 
-header .header__left p{
+header .header__left p {
     margin-top: 2rem;
     margin-bottom: 4rem;
     max-width: 50rem;
     color: var(--p-p);
 }
 
-header .header__right .header__image{
+header .header__right {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+header .header__right .header__image {
+    height: 90%;
+    width: 90%;
     position: relative;
     line-height: 0;
 }
 
-header .header__right .header__image::after{
+header .header__right .header__image::after {
     content: '';
     display: block;
     width: 100%;
@@ -36,32 +43,32 @@ header .header__right .header__image::after{
     border: 1px solid var(--tertiary-color);
     position: absolute;
     top: -1.5rem;
-    right:-1.5rem;
-    border-radius: 0.5rem;
+    right: -1.5rem;
+    border-radius: 1rem;
     z-index: -1;
 }
 
-header .header__right .header__image .photo{
-    border-radius: 0.5rem;
+header .header__right .header__image .photo {
+    border-radius: 1rem;
     min-width: 25rem;
     max-width: 100%;
+    filter: brightness(1.1);
 }
 
-header .header__right .header__image .background{
+header .header__right .header__image .background {
     position: absolute;
-    top: -4rem;
+    top: -2rem;
     right: -2.5rem;
     z-index: -1;
 }
 
 @media only screen and (max-width: 768px) {
-    header{
+    header {
         flex-direction: column-reverse;
         text-align: center;
     }
 
-    header .header__left p{
+    header .header__left p {
         margin: 2rem auto 4rem;
     }
 }
-
